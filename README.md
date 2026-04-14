@@ -20,11 +20,11 @@ PersonRegister is a Windows Presentation Foundation (WPF) desktop application bu
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/FAUST.git
+   git clone https://github.com/jpr-otter/person-register
    ```
 2. Navigate to the project directory:
    ```bash
-   cd FAUST/PersonRegister
+   cd /PersonRegister
    ```
 3. Open the `PersonRegister.sln` solution file in Visual Studio.
 4. Build the solution (`Ctrl + Shift + B`).
