@@ -35,9 +35,5 @@ PersonRegister is a Windows Presentation Foundation (WPF) desktop application bu
 - **Adding a Person**: Click the Add button (or equivalent in the UI) to create a new person entry. A unique ID will be automatically generated.
 - **Importing Data**: Use the provided demo files (`demoDataForPersonRegister.txt`) to explore the CSV import functionality.
 
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify it as you see fit.
-# person-register
 
 
