@@ -1,0 +1,72 @@
+﻿<Window x:Class="PersonRegister.PersonEntryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Person Entry" Width="500" Height="730">
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+        
+        <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            
+            <TextBlock Text="ID:" FontWeight="Bold"/>
+            <TextBlock x:Name="IdTextBlock" />
+
+            <TextBlock Text="First Name:" FontWeight="Bold"/>
+            <TextBox x:Name="NameTextBox" 
+                     VerticalAlignment="Center" 
+                     HorizontalAlignment="Left" 
+                     Margin="0,0,0,10"
+                     Width="200" 
+                     GotFocus="NameTextBox_GotFocus" 
+                     LostFocus="NameTextBox_LostFocus"/>
+
+            <TextBlock Text="Last Name:" FontWeight="Bold"/>
+            <TextBox x:Name="LastNameTextBox" 
+                     VerticalAlignment="Center" 
+                     HorizontalAlignment="Left" 
+                     Margin="0,0,0,10"
+                     Width="200" 
+                     GotFocus="LastNameTextBox_GotFocus" 
+                     LostFocus="LastNameTextBox_LostFocus"/>
+
+            <TextBlock Text="Date of Birth:" FontWeight="Bold"/>
+            <DatePicker x:Name="DateOfBirthPicker" HorizontalAlignment="Left"  Width="300"  Margin="0,0,0,10"/>
+                       
+            <TextBlock Text="Addresses:" FontWeight="Bold" Margin="0,10,0,5"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <ListBox x:Name="AddressesListBox" Height="100" Width="290"/>
+                <StackPanel Orientation="Vertical" Margin="5,0,0,0">
+                    <Button Content="Add Address" Click="AddAddress_Click" Width="120" Margin="0,5,0,5"/>
+                    <Button Content="Edit Address" Click="EditAddress_Click" Width="120" Margin="0,5,0,5"/>
+                    <Button Content="Remove Address" Click="RemoveAddress_Click" Width="120" Margin="0,5,0,5"/>
+                </StackPanel>
+            </StackPanel>
+
+            <TextBlock Text="Phone Numbers:" FontWeight="Bold" Margin="10,10,0,5"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <ListBox x:Name="PhoneNumbersListBox" Height="100" Width="290"/>
+                <StackPanel Orientation="Vertical" Margin="5,0,0,0">
+                    <Button Content="Add Phone Number" Click="AddPhone_Click" Width="150" Margin="0,5,0,5"/>
+                    <Button Content="Edit Phone Number" Click="EditPhone_Click" Width="150" Margin="0,5,0,5"/>
+                    <Button Content="Remove Phone Number" Click="RemovePhone_Click" Width="150" Margin="0,5,0,5"/>
+                </StackPanel>
+            </StackPanel>
+
+            <TextBlock Text="Custom Fields:" FontWeight="Bold" Margin="10,10,0,5"/>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <ListBox x:Name="CustomFieldsListBox" Height="100" Width="290"/>
+                <StackPanel Orientation="Vertical" Margin="5,0,0,0">
+                    <Button Content="Add Custom Field" Click="AddCustomField_Click" Width="150" Margin="0,5,0,5"/>
+                    <Button Content="Edit Custom Field" Click="EditCustomField_Click" Width="150" Margin="0,5,0,5"/>
+                    <Button Content="Remove Custom Field" Click="RemoveCustomField_Click" Width="150" Margin="0,5,0,5"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="5">
+                <Button Content="Save" Click="Save_Click" Width="100" Margin="0,0,0,0" />
+                <Button Content="Cancel" Click="Cancel_Click" Width="100" Margin="10,0,0,0" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+    </ScrollViewer>
+</Window>

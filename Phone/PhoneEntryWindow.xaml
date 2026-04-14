@@ -1,0 +1,23 @@
+﻿<Window x:Class="PersonRegister.PhoneEntryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Phone Entry" Height="160" Width="400">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Phone Number:" FontWeight="Bold"/>
+            <TextBox x:Name="PhoneTextBox" />
+
+            <TextBlock Text="Category:" FontWeight="Bold"/>
+            <ComboBox x:Name="CategoryComboBox" Width="200">
+                <ComboBoxItem Content="Business"/>
+                <ComboBoxItem Content="Private"/>
+                <ComboBoxItem Content="Mobile"/>
+            </ComboBox>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button Content="OK" Width="100" Click="OK_Click"/>
+                <Button Content="Cancel" Width="100" Margin="10,0,0,0" Click="Cancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
